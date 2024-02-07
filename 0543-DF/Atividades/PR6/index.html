@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reserva</title>
+</head>
+     
+</body>
+</html>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="name">Nome</label>
+            <input id="name" type="text" name="name" maxlength="10" required>
+            <br><br>
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" required>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Serviços Desejados</legend>
+            <input id="ticket" type="checkbox" name="ticket" value="Passagens">
+            <label for="ticket">Compra de Passagens</label>
+            <br>
+            <input id="hotel" type="checkbox" name="hotel" value="Hospedagem">
+            <label for="hotel">Reserva de Hospedagem</label>
+            <br>
+            <input id="car" type="checkbox" name="car" value="Aluguel de Veículos">
+            <label for="car">Aluguel de Veículos</label>
+        </fieldset>
+        <fieldset>
+            <legend>Forma de Pagamento</legend>
+            <input id="credit" type="radio" name="payment" value="Cartão de Crédito" checked>
+            <label for="credit">Cartão de Crédito</label>
+            <br>
+            <input id="boleto" type="radio" name="payment" value="Boleto">
+            <label for="boleto">Boleto</label>
+            <br>
+            <input id="pix" type="radio" name="payment" value="PIX">
+            <label for="pix">Pix</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Prazo de Pagamento</legend>
+            <label for="payment-time">Prazo de Pagamento</label>
+            <select name="payment-time" id="payment-time">
+                <option value="1">À vista</option>
+                <option value="5">Cinco vezes sem juros</option>
+                <option value="10">Dez vezes com juros</option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Dúvidas?</legend>
+            <textarea name="message" id="message" cols="30" minlength="5" rows="4"></textarea>
+        </fieldset>
+        <br>
+        <input type="submit" value="Salvar">
+    </form>
+</body>
+</html>
