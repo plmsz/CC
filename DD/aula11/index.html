@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+     <button onclick="excluir()">Excluir</button>
+     <p id="um" class="item">item</p>
+</body>
+<script>
+   // window.alert("ola")
+    //window.confirm("você quer excluir o item selecionado?")
+    let numero = Number(parseFloat(window.prompt("qual é o primeiro número?")))
+    let numero2 = Number(parseFloat(window.prompt("qual é o segundo número?")))
+
+    let resultado = numero + numero2
+
+    window.alert(`o resultado é ${resultado}`)
+
+    function excluir(params) {
+        let confirmacao = window.confirm("você quer excluir o item selecionado?")
+        if(confirmacao){
+            const item = document.querySelector("#um.item");
+            item.inner
+            console.log(item)
+            item.remove();
+        }else{
+            alert('o item não foi excluído')
+        }
+    }
+    
+
+</script>
+</html>
