@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exercício</title>
+</head>
+
+<body>
+    <input type="text" id="categoriaInput" placeholder="Digite a categoria">
+    <button name="busca" id="busca">Buscar</button>
+    <ul id="listaResultado"></ul>
+</body>
+<script>
+    class Objeto {
+        constructor(nome, descricao, categoria, preco) {
+            this.nome = nome
+            this.descricao = descricao
+            this.categoria = categoria
+            this.preco = preco
+        }
+    }
+
+    const listaDeObjetos = [
+        new Objeto("Samsung A71", "Celular para games", "Eletrônico", 1500),
+        new Objeto("Samsung TAB G21", "Tablet para estudo", "Eletrônico", 2100),
+        new Objeto("Fogão 4 bocas", "Fogão para alimentação saudável", "Eletrodoméstico", 1600),
+        new Objeto("Geladeira e Freezer", "Congela o dia", "Eletrodoméstico", 4000),
+        new Objeto("Air Fryer", "Agiliza seu dia", "Eletrodoméstico", 950),
+        new Objeto("Guarda-roupa", "Espaçoso", "Móveis", 500),
+        new Objeto("Cama", "Cama de casal", "Móveis", 400),
+    ]
+
+    const btnBusca = document.getElementById("busca")
+
+    const inputCategoria = document.getElementById("categoriaInput")
+    function filtraPorCategoria() {
+        let listaResultado = document.getElementById("listaResultado")
+        listaResultado.innerHTML = "" //limpa a lista de resultados antes de filtrar
+        let categoria = inputCategoria.value.toLowerCase();
+
+        let listaFiltrada = listaDeObjetos.filter((item) => item.categoria.toLowerCase() == categoria)
+        
+        if (listaFiltrada.length == 0) {
+            listaResultado.innerText = "Nenhum objeto encontrado para a categoria informada"
+        }
+        listaFiltrada.forEach((item) => {
+            let li = document.createElement("li")
+            li.innerText = `Nome: ${item.nome} | Descricão: ${item.descricao} | Categoria: ${item.categoria} | Preço: ${item.preco}`
+            listaResultado.appendChild(li)
+        })
+
+    }
+
+    btnBusca.addEventListener("click", filtraPorCategoria)
+</script>
+
+</html>

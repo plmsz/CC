@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eventos</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form name="formCadastro" onsubmit="ValidarFormulario()">
+        <input type="text" name="nome" id="nome" placeholder="Nome">
+        <input type="email" name="email" id="email" placeholder="Email">
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+<script>
+    function ValidarFormulario() {
+        event.preventDefault();
+        let nomePessoa = document.forms["formCadastro"]["nome"].value;
+        let email = document.forms["formCadastro"]["email"].value;
+        if (nomePessoa == "") {
+            alert("Por favor, preencha o campo nome completo");
+        } else if (email == "") {
+            alert("Por favor, preencha o campo email.");
+        } else {
+            alert("Nome: " + nomePessoa + "\nEmail: " + email)
+            event.preventDefault();
+        }
+    }
+
+</script>
+
+</html>
