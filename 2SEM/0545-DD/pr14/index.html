@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sistema de Funcionários</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.cyan.min.css">
+</head>
+
+<body>
+    <main class="container">
+        <h1>Cadastre-se</h1>
+        <form name="form-register">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label for="name">Nome Completo</label>
+                <input type="text" name="name" id="name">
+
+                <label for="age">Idade</label>
+                <input inputmode="numeric" type="text" name="age" id="age">
+            </fieldset>
+            <fieldset>
+                <legend>Dados profissionais</legend>
+                <label for="role">Cargo</label>
+                <select name="role" id="role">
+                    <option selected disabled value="">Selecione</option>
+                    <option value="Desenvolvedor">Desenvolvedor</option>
+                    <option value="Gerente">Gerente</option>
+                    <option value="Outro">Outro</option>
+                </select>
+                <label for="department">Departamento</label>
+                <input type="text" name="department" id="department">
+                <label for="language">Linguagem de programação</label>
+                <input type="text" name="language" id="language">
+            </fieldset>
+            <button type="submit">Cadastrar</button>
+        </form>
+        <section>
+            <h2>Funcionários Cadastrados</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome Completo</th>
+                        <th>Cargo</th>
+                        <th>Idade</th>
+                        <th>Departamento</th>
+                        <th>Linguagem</th>
+                        <th>Apresentação</th>
+                        <th>Tarefas</th>
+                    </tr>
+                </thead>
+                <tbody id="table-employees">
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="./main.js" type="module"></script>
+
+</html>
