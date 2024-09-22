@@ -4,6 +4,8 @@ const department = document.getElementById('department');
 const language = document.getElementById('language');
 const form = document.forms['form-register'];
 const fields = form.querySelectorAll('input, select');
+const MIN_AGE = 14;
+const MAX_AGE = 100;
 
 form.addEventListener('submit', submitForm);
 
@@ -75,7 +77,7 @@ function validateForm(form) {
     age.setAttribute('aria-invalid', true);
     throw new Error('A idade deve ser um valor numérico');
   }
-  if (age.value < 14 || age.value > 100) {
+  if (age.value < MIN_AGE || age.value > MAX_AGE) {
     age.setAttribute('aria-invalid', true);
     throw new Error('A idade deve ser apropriada');
   }
