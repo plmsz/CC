@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Criando elementos</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <h1>Times de futebol</h1>
+    <ul id="lista"></ul>
+</body>
+<script>
+    let elemento = document.createElement('div');
+    elemento.innerText = 'Texto incluído da div - criado com createElement';
+    elemento.style.border = '1px solid red'
+    document.body.append(elemento)
+
+    let lista = document.getElementById('lista');
+    const timesDeFutebol = ["Palmeiras", "Santos", "Flamengo", "Vitória"]
+    
+    timesDeFutebol.forEach(element => {
+        let item = document.createElement('li');
+        item.innerText = element;
+        item.style.border = "1px dotted blue"
+        item.style.marginBottom = "10px"
+        item.style.listStyle = "none"
+        lista.appendChild(item)
+    });
+  
+
+</script>
+</html>

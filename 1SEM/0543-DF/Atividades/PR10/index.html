@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cabeleireira Leila</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-body-secondary">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark-subtle">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Cabeleireira Leila</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#agendamento">Agenda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#depoimentos">Depoimentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">
+                                Contato
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="mb-2 container py-4">
+        <section id="servicos" class="container d-flex flex-column align-items-center">
+            <p class="lead">Nossa equipe de profissionais experientes está pronta para atender você com carinho e
+                atenção.</p>
+            <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=1024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="img-fluid" alt="Cabeleira escovando cabelo da cliente">
+            <h2>Serviços</h2>
+            <p>Oferecemos uma ampla gama de serviços de beleza para homens e mulheres, incluindo:</p>
+            <ul>
+                <li>Cortes de cabelo</li>
+                <li>Coloração</li>
+                <li>Manicure e pedicure</li>
+                <li>Maquiagem</li>
+            </ul>
+        </section>
+        <section id="depoimentos">
+            <h2 class="text-center">Depoimentos de Clientes</h2>
+            <div class="container">
+                <div class="grid">
+                    <div class="row">
+                        <div class="col col-md-6 col-12">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx4fHx8ZW58MHx8fHw%3D&auto=format&fit=&ixlib=rb-4.0.3&"
+                                alt="Cliente Ana, cabelo castanho ondulado" class="w-100">
+                            <p class="w-100 h4 text-end">
+                                "Atendimento excelente! O pessoal é muito atencioso e profissional. Recomendo a todos!"
+                            </p>
+                            <h3 class="text-primary-emphasis text-end">Ana Silva</h3>
+                        </div>
+                        <div class="col col-md-6 col-12">
+                            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1974&auto=format&&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Cliente João, cabelo castanho curto" class="w-100">
+                            <p class="w-100 h4 text-end">
+                                "Adorei o resultado do meu corte de cabelo! O profissional me deu
+                                dicas
+                                valiosas
+                                para cuidar dos meus cabelos."
+                            </p>
+                            <h3 class="text-primary-emphasis text-end">João Oliveira</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="container col-lg-8 py-3" id="agendamento">
+            <h2 class="text-center">Faça seu pré-agendamento</h2>
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <label class="form-label" for="name">Nome</label>
+                    <input id="name" class="form-control" type="text" name="name" maxlength="10" required>
+                    <label for="email" class="form-label">Email</label>
+                    <input id="email" class="form-control" type="email" name="email" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Serviços Desejados</legend>
+                    <div class="form-check">
+                        <input class="form-check-input" id="haircut" type="checkbox" name="haircut" value="haircut">
+                        <label class="form-check-label" for="haircut">Cortes de cabelo</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" id="hairDye" type="checkbox" name="hairDye" value="hairDye">
+                        <label class="form-check-label" for="hairDye">Coloração</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" id="nails" type="checkbox" name="nails" value="nails">
+                        <label class="form-check-label" for="nails">Manicure e pedicure</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" id="makeup" type="checkbox" name="makeup" value="makeup">
+                        <label class="form-check-label" for="makeup">Maquiagem</label>
+                    </div>
+                    <div class="form-check">
+                        <label for="other">Outros</label>
+                        <input class="form-check-input" type="checkbox" name="other" placeholder="Outros">
+                        <br>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Forma de Pagamento</legend>
+                    <div class="form-check">
+                        <input class="form-check-input" id="credit" type="radio" name="payment"
+                            value="Cartão de Crédito" checked>
+                        <label class="form-check-label" for="credit">Cartão de Crédito</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" id="boleto" type="radio" name="payment" value="Boleto">
+                        <label class="form-check-label" for="boleto">Boleto</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" id="pix" type="radio" name="payment" value="PIX">
+                        <label for="pix">Pix</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Dúvidas?</legend>
+                    <textarea name="message" id="message" cols="30" minlength="5" class="form-control"
+                        rows="4"></textarea>
+                </fieldset>
+                <div class="d-flex justify-content-center">
+                    <input class="btn btn-primary mt-2" type="submit" value="Salvar">
+                </div>
+            </form>
+        </section>
+    </div>
+    <footer class="text-center bg-body-tertiary">
+        <section id="contato">
+            <address>Endereço: Rua Amapá, nº 123, Caminho das árvores, Salvador<br>
+                Telefone:
+                <a href="tel:+557132456789">(71) 3245-6789</a>
+                <br>
+                <a href="mailto:contato@salaodebeleza.com.br">
+                    Email: contato@salaodebeleza.com.br
+                </a>
+            </address>
+        </section>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            Todos os direitos reservados - Cabeleireira Leila&reg; <datetime></datetime>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelector('datetime').innerHTML = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+    <button onclick="excluir()">Excluir</button>
+    <p id="um" class="item">item</p>
+    <button onclick="modificar()">Modificar</button>
+    <div class="classe-1"></div>
+    <ul id="lista">
+        <li id="um" class="item">item</li>
+        <li id="dois" class="item">item</li>
+        <li id="tres" class="item">item</li>
+    </ul>
+    <input type="text" name="nome">
+    <div class="container">
+        <div class="mensagem"></div>
+        <div class="mensagem"></div>
+        <div class="mensagem"></div>
+    </div>
+</body>
+<script>
+    /* window.alert("ola")
+     let numero = Number(parseFloat(window.prompt("qual é o primeiro número?")))
+     let numero2 = Number(parseFloat(window.prompt("qual é o segundo número?")))
+ 
+     let resultado = numero + numero2
+ 
+     window.alert(`o resultado é ${resultado}`) */
+
+    function excluir() {
+        let confirmacao = window.confirm("você quer excluir o item selecionado?")
+        if (confirmacao) {
+            const item = document.querySelector("p#um.item");
+            item.remove();
+        } else {
+            alert('o item não foi excluído')
+        }
+    }
+
+    function modificar() {
+        let elemento1 = document.getElementsByTagName("li")[0].style.color = "red";
+        let elemento2 = document.getElementsByTagName("li")[1].style.border = "2px solid blue";
+
+        let elemento3 = document.getElementsByClassName("classe-1")
+        elemento3[0].style.backgroundColor = "green"
+        elemento3[0].innerHTML = "<p>Tag p da div</p>"
+
+        let elemento4 = document.getElementsByName("nome")[0];
+        elemento4.value = "valor adicionado";
+
+        let lista = document.getElementById("lista");
+        let item = document.createElement("li");
+        item.innerText = "item adicionado com inner text";
+        lista.appendChild(item);
+
+        let elementoSeletor = document.querySelectorAll(".mensagem");
+
+        elementoSeletor.forEach((elemento, index) => {
+            elemento.innerText = `item ${index + 1}`
+        })
+
+    }
+
+
+</script>
+
+</html>

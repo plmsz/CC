@@ -1,0 +1,40 @@
+# Ignora arquivos de classe gerados
+*.class
+
+# Ignora arquivos de bytecode
+*.jar
+
+# Ignora arquivos de teste
+**/target/test-classes/**
+
+# Ignora arquivos de log
+**/logs/**
+
+# Ignora arquivos de cobertura de código
+**/coverage/**
+
+# Ignora arquivos de configuração do IDE
+**/.idea/**
+
+# Ignora arquivos de configuração do Maven
+**/.mvn/**
+
+# Ignora arquivos de configuração do Gradle
+**/.gradle/**
+
+# Ignora arquivos temporários
+**/tmp/**
+
+# Ignora arquivos de documentação
+**/docs/**
+
+# Ignora arquivos gerados pelo Javadoc
+**/javadoc/**
+
+# Ignora arquivos gerados pelo Spring Boot
+**/target/classes/**
+
+# Ignora arquivos específicos
+.classpath
+.project
+pom.xml

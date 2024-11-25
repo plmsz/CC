@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eventos</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script>
+        let btn = document.querySelector('button');
+
+        function clique() {
+            let p = document.createElement('p')
+            p.textContent = "Clicou no botão"
+            document.body.appendChild(p)
+        }
+        function hover() {
+            document.querySelector("#exemplo-h1").textContent = "Evento com mouse over"
+        }
+
+        function sair() {
+            document.querySelector("#exemplo-h1").textContent = "Evento com mouse out"
+        }
+
+        function novoItem(){
+            let campoNome = document.getElementById('nome');
+            alert("Seu nome é: "+ campoNome.value)
+        }
+
+    </script>
+</head>
+
+<body>
+    <input onclick="clique()" type="button" value="Clique aqui"></input>
+    <h1 onmouseover="hover()" onmouseout="sair()" id="exemplo-h1">Passe o mouse</h1>
+    <form style="display: flex; flex-direction: column; gap: 10px;">
+        <input type="text" name="nome" id="nome" placeholder="Nome">
+        <input type="email" name="email" id="email" placeholder="Email">
+        <button type="button" onclick="novoItem()">Enviar</button>
+    </form>
+</body>
+
+</html>
