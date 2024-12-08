@@ -1,4 +1,4 @@
-package listas_sets;
+package listas;
 
 import java.util.ArrayList;
 import java.util.Collections;
