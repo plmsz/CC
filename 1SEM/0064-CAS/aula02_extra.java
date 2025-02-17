@@ -41,7 +41,7 @@ public class aula02_extra {
                         String.format("Quociente: %.2f\nPotência: %.2f", quociente, potencia));
             } catch (NumberFormatException ex) {
                 // Exibe mensagem de erro caso a entrada não seja válida
-                JOptionPane.showMessageDialog(null, "Entrada inválida. Digite apenas números inteiros.");
+                JOptionPane.showMessageDialog(null,  "Entrada inválida. Digite apenas números inteiros.");
             }
         });
         panel.add(buttonCalcular);
