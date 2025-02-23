@@ -1,0 +1,356 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "FibonnaciRecursao",
+      "request": "launch",
+      "mainClass": "FibonnaciRecursao",
+      "projectName": "CC_320ddf10"
+    },
+    {
+      "type": "java",
+      "name": "Fibonnaci_Recursao_3",
+      "request": "launch",
+      "mainClass": "Fibonnaci_Recursao_3",
+      "projectName": "CC_320ddf10"
+    },
+    {
+      "type": "java",
+      "name": "FatorialRecursao1",
+      "request": "launch",
+      "mainClass": "FatorialRecursao1",
+      "projectName": "CC_320ddf10"
+    },
+    {
+      "type": "java",
+      "name": "Launch Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "App",
+      "request": "launch",
+      "mainClass": "App",
+      "projectName": "CC_320ddf10"
+    },
+    {
+      "type": "java",
+      "name": "Matriz_Entrada",
+      "request": "launch",
+      "mainClass": "matriz_entrada_2.Matriz_Entrada",
+      "projectName": "CC_320ddf10"
+    },
+    {
+      "type": "java",
+      "name": "Matriz_Entrada(1)",
+      "request": "launch",
+      "mainClass": "matriz_entrada_3_swing.Matriz_Entrada",
+      "projectName": "CC_320ddf10"
+    },
+    {
+      "type": "java",
+      "name": "Vetor_Entrada",
+      "request": "launch",
+      "mainClass": "vetor_ex1.Vetor_Entrada",
+      "projectName": "CC_320ddf10"
+    },
+    {
+      "type": "java",
+      "name": "Principal",
+      "request": "launch",
+      "mainClass": "CollectionPt1/ex_produtos.Principal",
+      "projectName": "CollectionPt1"
+    },
+    {
+      "type": "java",
+      "name": "Comparators",
+      "request": "launch",
+      "mainClass": "CollectionPt1/listas.Comparators",
+      "projectName": "CollectionPt1"
+    },
+    {
+      "type": "java",
+      "name": "Iterators_ArrayList",
+      "request": "launch",
+      "mainClass": "CollectionPt1/listas.Iterators_ArrayList",
+      "projectName": "CollectionPt1"
+    },
+    {
+      "type": "java",
+      "name": "Linked_List",
+      "request": "launch",
+      "mainClass": "CollectionPt1/listas.Linked_List",
+      "projectName": "CollectionPt1"
+    },
+    {
+      "type": "java",
+      "name": "ListaDeNumeros",
+      "request": "launch",
+      "mainClass": "CollectionPt1/pr10.ListaDeNumeros",
+      "projectName": "CollectionPt1"
+    },
+    {
+      "type": "java",
+      "name": "Hash_set",
+      "request": "launch",
+      "mainClass": "CollectionPt1/set.Hash_set",
+      "projectName": "CollectionPt1"
+    },
+    {
+      "type": "java",
+      "name": "Linked_Hash_Set",
+      "request": "launch",
+      "mainClass": "CollectionPt1/set.Linked_Hash_Set",
+      "projectName": "CollectionPt1"
+    },
+    {
+      "type": "java",
+      "name": "Tree_set",
+      "request": "launch",
+      "mainClass": "CollectionPt1/set.Tree_set",
+      "projectName": "CollectionPt1"
+    },
+    {
+      "type": "java",
+      "name": "Aula2_Entrada",
+      "request": "launch",
+      "mainClass": "Logica/aulas.Aula2_Entrada",
+      "projectName": "Logica"
+    },
+    {
+      "type": "java",
+      "name": "Aula2_Operadores",
+      "request": "launch",
+      "mainClass": "Logica/aulas.Aula2_Operadores",
+      "projectName": "Logica"
+    },
+    {
+      "type": "java",
+      "name": "Aula2_Relacionais",
+      "request": "launch",
+      "mainClass": "Logica/aulas.Aula2_Relacionais",
+      "projectName": "Logica"
+    },
+    {
+      "type": "java",
+      "name": "Aula3_Condicionais",
+      "request": "launch",
+      "mainClass": "Logica/aulas.Aula3_Condicionais",
+      "projectName": "Logica"
+    },
+    {
+      "type": "java",
+      "name": "Aula4_Loop_do_while",
+      "request": "launch",
+      "mainClass": "Logica/aulas.Aula4_Loop_do_while",
+      "projectName": "Logica"
+    },
+    {
+      "type": "java",
+      "name": "Aula4_for",
+      "request": "launch",
+      "mainClass": "Logica/aulas.Aula4_for",
+      "projectName": "Logica"
+    },
+    {
+      "type": "java",
+      "name": "Aula5_String",
+      "request": "launch",
+      "mainClass": "Logica/aulas.Aula5_String",
+      "projectName": "Logica"
+    },
+    {
+      "type": "java",
+      "name": "Aula6_array_matriz",
+      "request": "launch",
+      "mainClass": "Logica/aulas.Aula6_array_matriz",
+      "projectName": "Logica"
+    },
+    {
+      "type": "java",
+      "name": "Hash_Map",
+      "request": "launch",
+      "mainClass": "Maps/maps.Hash_Map",
+      "projectName": "Maps"
+    },
+    {
+      "type": "java",
+      "name": "Linked_HashMap",
+      "request": "launch",
+      "mainClass": "Maps/maps.Linked_HashMap",
+      "projectName": "Maps"
+    },
+    {
+      "type": "java",
+      "name": "Tree_Map",
+      "request": "launch",
+      "mainClass": "Maps/maps.Tree_Map",
+      "projectName": "Maps"
+    },
+    {
+      "type": "java",
+      "name": "Aula7_Conceitos",
+      "request": "launch",
+      "mainClass": "OOP/oop.Aula7_Conceitos",
+      "projectName": "OOP_intro"
+    },
+    {
+      "type": "java",
+      "name": "Principal(1)",
+      "request": "launch",
+      "mainClass": "OOP_pt2/oop2.Principal",
+      "projectName": "OOP_pt2"
+    },
+    {
+      "type": "java",
+      "name": "Principal(2)",
+      "request": "launch",
+      "mainClass": "String/aula9.Principal",
+      "projectName": "String"
+    },
+    {
+      "type": "java",
+      "name": "Principal(3)",
+      "request": "launch",
+      "mainClass": "arquivos/classe_file.Principal",
+      "projectName": "arquivos"
+    },
+    {
+      "type": "java",
+      "name": "Binario",
+      "request": "launch",
+      "mainClass": "arquivos/gravar.Binario",
+      "projectName": "arquivos"
+    },
+    {
+      "type": "java",
+      "name": "Principal(4)",
+      "request": "launch",
+      "mainClass": "arquivos/gravar.Principal",
+      "projectName": "arquivos"
+    },
+    {
+      "type": "java",
+      "name": "Binario(1)",
+      "request": "launch",
+      "mainClass": "arquivos/leitura.Binario",
+      "projectName": "arquivos"
+    },
+    {
+      "type": "java",
+      "name": "Principal(5)",
+      "request": "launch",
+      "mainClass": "arquivos/leitura.Principal",
+      "projectName": "arquivos"
+    },
+    {
+      "type": "java",
+      "name": "Principal(6)",
+      "request": "launch",
+      "mainClass": "arquivos/serializar.Principal",
+      "projectName": "arquivos"
+    },
+    {
+      "type": "java",
+      "name": "Principal(7)",
+      "request": "launch",
+      "mainClass": "banco_dados/banco_dados.Principal",
+      "projectName": "banco_dados"
+    },
+    {
+      "type": "java",
+      "name": "Principal(8)",
+      "request": "launch",
+      "mainClass": "exceçoes/customizada.Principal",
+      "projectName": "exceçoes"
+    },
+    {
+      "type": "java",
+      "name": "Principal(9)",
+      "request": "launch",
+      "mainClass": "exceçoes/delegando_exc.Principal",
+      "projectName": "exceçoes"
+    },
+    {
+      "type": "java",
+      "name": "CapturandoExceptions",
+      "request": "launch",
+      "mainClass": "exceçoes/exceçao.CapturandoExceptions",
+      "projectName": "exceçoes"
+    },
+    {
+      "type": "java",
+      "name": "CapturandoMultiplasExceptions",
+      "request": "launch",
+      "mainClass": "exceçoes/exceçao.CapturandoMultiplasExceptions",
+      "projectName": "exceçoes"
+    },
+    {
+      "type": "java",
+      "name": "Finally",
+      "request": "launch",
+      "mainClass": "exceçoes/exceçao.Finally",
+      "projectName": "exceçoes"
+    },
+    {
+      "type": "java",
+      "name": "Principal(10)",
+      "request": "launch",
+      "mainClass": "exceçoes/exemplo_leitura_banco.Principal",
+      "projectName": "exceçoes"
+    },
+    {
+      "type": "java",
+      "name": "LancandoExcecao",
+      "request": "launch",
+      "mainClass": "exceçoes/lancamento.LancandoExcecao",
+      "projectName": "exceçoes"
+    },
+    {
+      "type": "java",
+      "name": "Principal(11)",
+      "request": "launch",
+      "mainClass": "exceçoes/multiplas_customizadas.Principal",
+      "projectName": "exceçoes"
+    },
+    {
+      "type": "java",
+      "name": "MinhaThreadExtendida",
+      "request": "launch",
+      "mainClass": "threads/extends_threads.MinhaThreadExtendida",
+      "projectName": "threads"
+    },
+    {
+      "type": "java",
+      "name": "Principal(12)",
+      "request": "launch",
+      "mainClass": "threads/multi_sem_sicronizar.Principal",
+      "projectName": "threads"
+    },
+    {
+      "type": "java",
+      "name": "Principal(13)",
+      "request": "launch",
+      "mainClass": "threads/multi_sicronizado.Principal",
+      "projectName": "threads"
+    },
+    {
+      "type": "java",
+      "name": "Principal(14)",
+      "request": "launch",
+      "mainClass": "threads/runnable.Principal",
+      "projectName": "threads"
+    }
+  ]
+}
